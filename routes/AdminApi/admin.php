@@ -26,7 +26,7 @@ Route::group([
 		 *      summary="管理员列表",
 		 *      description="管理员列表",
 		 * @OA\Parameter(
-		 *        name="keyword",
+		 *         name="keyword",
 		 *         description="手机/用户名/真实名字",
 		 *         in="query",
 		 *         required=false,
@@ -71,13 +71,13 @@ Route::group([
 		 *         required=false,
 		 *           @OA\Schema(
 		 *             type="integer",
-		 *            default="15",
+		 *             default="15",
 		 *         )
 		 *     ),
-		 *       @OA\Response(response=200,description="成功",@OA\JsonContent(ref="#/components/schemas/Admin"),),
+		 *     @OA\Response(response=200,description="成功",@OA\JsonContent(ref="#/components/schemas/Admin"),),
 		 *     @OA\Response(response="401",description="未登录",),
 		 *     @OA\Response(response="403",description="未授权",),
-		 *      @OA\Response(response=422,description="验证失败信息"),
+		 *     @OA\Response(response=422,description="验证失败信息"),
 		 *     @OA\Response(response=500,description="系统错误"),
 		 *
 		 * )

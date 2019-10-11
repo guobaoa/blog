@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers\AdminApi;
 
-use Validator;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -12,6 +11,9 @@ use Illuminate\Http\Request;
  */
 class ProductController extends Controller
 {
+	
+	
+	
 	/**
      * @OA\Schema(
      *       schema="Product",

@@ -35,9 +35,9 @@ class CreateAdminsTable extends Migration
 		        ->default('0')
 		        ->comment('0 非超级管理员 1 超级管理员');
 	        $table->string('role_ids')->nullable()->default('')->comment('角色id');
-	        $table->rememberToken();
-	        $table->timestamps();
-	        $table->softDeletes();
+	        $table->rememberToken();//token
+	        $table->timestamps();//created_at 和 updated_at
+	        $table->softDeletes();//deleted_at
 	        $table->index('deleted_at');
         });
     }
